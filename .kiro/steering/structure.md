@@ -24,3 +24,11 @@ myspace-resurrection/
 - Supabase client utilities should live in `lib/supabase/` (not yet created)
 - Tailwind utility classes are preferred over custom CSS; extend the theme via `@theme` in `globals.css`
 - The `RootLayout` uses a `LayoutProps<"/">` generic — follow this pattern for typed layout props
+
+
+## Rules
+- The `app/` folder is at the project root. There is no `src/` folder.
+- Import alias `@/*` points to the project root. Check `tsconfig.json`
+  to confirm this before using it.
+- Keep page files thin. Put logic in `lib/` and UI in `components/`.
+- Never read, print, or commit `.env.local`.
