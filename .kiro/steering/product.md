@@ -1,8 +1,26 @@
 # Product
 
-**myspace-resurrection** is a Next.js web application that is currently in early bootstrapping stage. It is going to be a MySpace revival website with deep profile customization as its core feature. Our goal is to mix he iconic 2000s ui style with some modern elements. We want to concentrate on profile customization, people can create their own pixel art avatar, they can change everything on their profile or they can choose from ready to use templates and widgets. We want to make it feel like you have your own personalised corner of the internet. We are interested in pushing the concept of music centered social media. For example we are inspiring ourselves of MySpace in the 2000s where when you open someone's profile you can play up to 10 songs they chose, like a little personal radio. We want to keep the comment wall and friend list. For art direction we want the app to feel modern but with touches of the old Myspace, the color palette for now is dark blue, violet, black and yellow but that is a subject to change. Some important references include: Old personal customized myspace profiles, the frutiger aero and windows 7 aesthetic, the artist's ptite soeur pixel art avatar and the ps2 advertisement material. 
+**myspace-resurrection** is a MySpace revival website with deep profile customization as its core feature. The goal is to mix the iconic 2000s UI style with modern elements. The app is in early bootstrapping stage; `app/page.tsx` still contains the default Next.js starter content.
 
-The app is not yet feature-built — `app/page.tsx` still contains the default Next.js starter content. Supabase is wired in as the backend (auth + database), suggesting user accounts and persistent data are core to the product.
+## Core idea
+Every user gets a personalised corner of the internet. Focus is on profile customization:
+- Pixel art avatar creator
+- Change everything on a profile, or pick from ready-made templates and widgets
+- Music-centered social media: opening a profile can play up to 10 songs the owner chose, like a little personal radio
+- Keep the comment wall and friend list
+
+## Art direction
+Modern, with touches of old MySpace. Palette for now: dark blue, violet, black and yellow (subject to change).
+
+References:
+- Old personalised MySpace profiles
+- Frutiger Aero and Windows 7 aesthetic
+- Pixel art avatars in the style of the artist Ptite Soeur
+- PS2 advertisement material
 
 ## Key integrations
-- **Supabase** — backend-as-a-service for authentication and data storage (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` are required in `.env.local`)
+- **Supabase**: auth, database and storage (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` required in `.env.local`)
+- **Music embeds**: Spotify, SoundCloud and YouTube official embed players
+
+## Out of scope for now
+Native mobile app, direct messaging, ads, audio uploads.

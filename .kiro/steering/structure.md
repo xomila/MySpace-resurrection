@@ -17,18 +17,15 @@ myspace-resurrection/
 
 ## Conventions
 
-- **App Router only** — no `pages/` directory; all routes live under `app/`
-- Pages and layouts are `.tsx` files; use React Server Components by default, add `"use client"` only when needed
-- Route segments follow the Next.js App Router folder convention: `app/[segment]/page.tsx`
-- Shared UI components should go in `components/` (not yet created)
-- Supabase client utilities should live in `lib/supabase/` (not yet created)
-- Tailwind utility classes are preferred over custom CSS; extend the theme via `@theme` in `globals.css`
-- The `RootLayout` uses a `LayoutProps<"/">` generic — follow this pattern for typed layout props
-
-
-## Rules
+- **App Router only**: no `pages/` directory; all routes live under `app/`.
 - The `app/` folder is at the project root. There is no `src/` folder.
-- Import alias `@/*` points to the project root. Check `tsconfig.json`
-  to confirm this before using it.
+- Import alias `@/*` points to the project root. Check `tsconfig.json` to confirm before using it.
+- Pages and layouts are `.tsx` files; use React Server Components by default, add `"use client"` only when needed.
+- Route segments follow the App Router folder convention: `app/[segment]/page.tsx`.
 - Keep page files thin. Put logic in `lib/` and UI in `components/`.
+- Shared UI components go in `components/` (not yet created).
+- Supabase client utilities and queries go in `lib/supabase/` (not yet created).
+- SQL migrations are saved in the repo (e.g. `supabase/migrations/`).
+- Tailwind utility classes are preferred over custom CSS; extend the theme via `@theme` in `globals.css`.
+- `RootLayout` uses a `LayoutProps<"/">` generic; follow this pattern for typed layout props.
 - Never read, print, or commit `.env.local`.
